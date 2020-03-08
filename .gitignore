@@ -1,4 +1,5 @@
 #ignore this script
+# https://www.lifewire.com/gitignore-file-4153363
 gitbot.sh
 output.txt
 *.dat
