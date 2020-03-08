@@ -4,10 +4,10 @@ echo "Please enter your name:"
 read USERNAME
 
 #check for a file with given username
-if [ -s ${USERNAME}_DAT ]; then
+if [ -s ${USERNAME}.dat ]; then
 	#read the age from the file
 	# output from cat is put in AGE by using ` ` to wrap command
-	AGE=`cat ${USERNAME}_DAT`
+	AGE=`cat ${USERNAME}.dat`
 	echo "You are $AGE years old"
 else
 	# Ask the user for his/her age
@@ -20,8 +20,8 @@ else
 		if [ "$AGE" -ge 100 ]; then
 			echo "You are too old!"
 		else 
-			#write the age to a new file
-			echo $AGE > ${USERNAME}_DAT
+			#write the age to a file
+			echo $AGE > ${USERNAME}.dat
 		fi
 	fi
 fi

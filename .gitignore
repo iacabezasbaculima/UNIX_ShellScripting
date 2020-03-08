@@ -1,2 +1,4 @@
 #ignore this script
 gitbot.sh
+output.txt
+*.dat
